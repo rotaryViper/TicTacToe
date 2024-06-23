@@ -1,0 +1,116 @@
+body{
+        background: black;
+        color: white;
+        text-align: center;
+}
+
+.title{
+        font-family: "Nunito", sans-serif;  
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+}
+
+.no_click:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+}
+
+.grid{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        user-select: none;
+}
+
+.square{
+        font-family: sans-serif;
+        vertical-align: middle;
+
+        border-radius: 2rem;
+        transition: transform .5s ease-in-out;
+        outline: .2rem solid white;
+}
+
+.title_grid{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0;
+        align-items: flex-end;
+}
+
+.symbol{
+        height: auto;
+        user-select: none;
+}
+
+
+@media (max-aspect-ratio: 0.999999999) {
+        .grid {
+                width: 93vw;
+        }
+        .square {
+                width: 25vw;
+                height: 25vw;
+                padding: 2vw;
+                margin: 1vw;
+        }
+
+        .circle{
+                font-size: 22vw;
+                line-height: 21vw;
+        }
+
+        .cross{
+                font-size: 31vw;
+                line-height: 23vw;
+        }
+
+        .title_grid {
+                font-size: 10vw;
+        }
+
+        .symbol {
+                font-size: 4vw;
+                width: 4vw;
+                padding: 0 1vw 0;
+
+        }
+}
+
+@media (min-aspect-ratio: 1) {
+        .grid {
+                width: 81vh;
+        }
+        .square {
+                width: 21vh;
+                height: 21vh;
+                padding: 2vh;
+                margin: 1vh;
+        }
+
+        .circle{
+                font-size: 19vh;
+                line-height: 18vh;
+        }
+
+        .cross{
+                font-size: 27vh;
+                line-height: 20vh;
+        }
+
+        .title_grid {
+                font-size: 10vh;
+        }
+
+        .symbol {
+                font-size: 4vh;
+                width: 4vh;
+                padding: 0 1vh 0;
+        }
+}
